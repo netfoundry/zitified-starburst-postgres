@@ -1,4 +1,4 @@
-# Zitified-Starburst-Prostgres
+# Zitified-Starburst-Postgres
 
 zitified-starburst-postgres example builds on the community-driven Ziti trino connector in
  [zitified-trino-postgres](https://github.com/netfoundry/zitified-trino-postgres).
