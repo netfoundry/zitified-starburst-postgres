@@ -27,7 +27,7 @@ Pre-reqs:
 ```
 mkdir repos
 cd repos
-git clone https://github.com/r-caamano/zitified-starburst-postgres.git
+git clone https://github.com/netfoundry/zitified-starburst-postgres.git
 cd zitified-starburst-postgres
 mvn clean package -nsu
 cp target/trino-postgres-ziti-1.0.0.jar starburst-ziti-test/plugin/ziti-postgres
