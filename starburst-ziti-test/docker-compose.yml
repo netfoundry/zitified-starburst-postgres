@@ -1,0 +1,12 @@
+services:
+  starburst-ziti:
+    image: starburstdata/starburst-enterprise:latest
+    container_name: starburst-ziti
+    network_mode: "host"
+    volumes:
+      - ./plugin/ziti-postgres:/usr/lib/starburst/plugin/ziti-postgres
+      - ./etc/catalog/ziti_pg.properties:/etc/starburst/catalog/ziti_pg.properties
+      - ./identity.json:/etc/starburst/ziti/identity.json
+    environment:
+      # Starburst uses /etc/starburst as the config root
+      - ZITI_IDENTITY_FILE=/etc/starburst/ziti/identity.json
